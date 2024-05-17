@@ -1,0 +1,39 @@
+.tabs-container {
+  display: flex;
+  flex-direction: column; /* Stack tabs and content vertically */
+  /* Optional border for the container */
+  margin-bottom: 20px; /* Add some margin for spacing */
+}
+
+.tabs-list {
+  display: flex; /* Arrange tab items horizontally */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  border-bottom: 1px solid #ddd; /* Optional bottom border for tabs */
+}
+
+.tab-item {
+  padding: 10px 20px; /* Adjust padding for tabs */
+  cursor: pointer; /* Set cursor to pointer on hover */
+  color: #333; /* Text color for tabs */
+}
+
+.tab-item.active {
+ color: #39CDCC; /* Background color for active tab */
+  border-bottom: 2px solid#39CDCC;
+}
+
+.tab-content {
+  padding: 20px; /* Padding for content area */
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+.tab-content-item.active {
+  display: block; /* Show content for active tab */
+}
+
+.tab-content-item.hidden {
+  display: none; /* Hide content for inactive tabs */
+}

@@ -1,0 +1,59 @@
+.inputField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  label {
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .togglePasswordVisibility {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-span {
+  position: absolute;
+  right: 5%;
+  top: 40%;
+  color: $text-tetiary-color;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16.39px;
+}
+.search-icon {
+  display: none;
+}
+@include ScreenSizes(tablet) {
+  .search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+
+    cursor: pointer;
+    background-color: rgba(57, 205, 204, 1);
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 44px;
+    width: 56px;
+    color: #fff;
+  }
+}

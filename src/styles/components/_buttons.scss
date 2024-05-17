@@ -1,0 +1,22 @@
+
+.base{
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    font-weight: 600;
+}
+.primary {
+  background-color: $text-tetiary-color;
+
+}
+
+.secondary {
+  background-color: #ccc;
+  color: #333;
+  border: 1px solid #ccc;
+ 
+}

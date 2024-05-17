@@ -1,0 +1,49 @@
+//partials
+@import "./partials/all";
+
+//components
+@import "./components/all";
+
+//layout
+@import "./layout/all";
+//pages
+@import "./pages/all";
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../fonts/AvenirNextLTPro-Regular.otf') format('truetype'); /* Adjust file format and path */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Avenir Next';
+    src: url('../fonts/AvenirNextLTPro-Bold.otf') format('truetype'); /* Adjust file format and path */
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+
+  body{
+    font-family: 'Avenir Next';
+  }
+  
+// .main {
+//   color: $text-primary-color;
+//   @include widthHeight(200px, 400px);
+//   @include ScreenSizes(phone) {
+//     background-color: blue;
+//   }
+
+//   @include ScreenSizes(tablet) {
+//     background-color: orange;
+//   }
+//   @include ScreenSizes(desktop) {
+//     background-color: green;
+//   }
+// }
+
+// h1 {
+//   background-color: $text-danger-color;
+//   font-size: $h1-font-size;
+// }

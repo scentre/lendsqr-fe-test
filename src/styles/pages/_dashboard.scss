@@ -1,0 +1,51 @@
+.dashboard-main {
+  display: flex;
+
+  .dashboard-sidebar {
+    flex-basis: 15%;
+    background-color: $background;
+    padding: 10px 20px;
+    min-height: 100vh;
+    display: none;
+  }
+  .dashboard-mainbar {
+    flex-basis: 100%;
+    background-color: $sidebar-background-color;
+    padding: 10px;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  @include ScreenSizes(tablet) {
+    .dashboard-sidebar {
+      flex-basis: 15%;
+      background-color: $background;
+      padding: 10px 20px;
+      min-height: 100vh;
+      display: block;
+    }
+    .dashboard-mainbar {
+      flex-basis: 90%;
+      background-color: $sidebar-background-color;
+      padding: 10px 20px;
+    }
+    .mobile-nav {
+      display: none;
+    }
+  }
+  @include ScreenSizes(desktop) {
+    .dashboard-sidebar {
+      flex-basis: 25%;
+      background-color: $background;
+      padding: 10px 20px;
+      min-height: 100vh;
+    }
+    .dashboard-mainbar {
+      flex-basis: 80%;
+      background-color: $sidebar-background-color;
+      padding: 10px 20px;
+    }
+  }
+}

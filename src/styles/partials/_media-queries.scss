@@ -1,0 +1,23 @@
+$mobile-min-width: 320px;
+
+$tablet-min-width: 768px;
+
+$desktop-min-width: 1024px;
+
+@mixin ScreenSizes($deviceType) {
+  @if ($deviceType==phone) {
+    @media (min-width: $mobile-min-width) {
+        @content;
+    }
+  }
+  @if ($deviceType==tablet) {
+    @media (min-width: $tablet-min-width) {
+        @content;
+    }
+  }
+  @if ($deviceType==desktop) {
+    @media (min-width: $desktop-min-width) {
+        @content;
+    }
+  }
+}

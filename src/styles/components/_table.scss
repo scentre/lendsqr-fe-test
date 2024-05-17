@@ -1,0 +1,164 @@
+@include ScreenSizes(phone) {
+  .table {
+    display: none;
+  }
+  .pagination {
+    display: none;
+  }
+  .mobile-table {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &__elements {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 20px;
+      gap: 10px;
+      border: 1px solid #213f7d0f;
+      background-color: $background;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    @include ScreenSizes(tablet) {
+      display: none;
+    }
+  }
+}
+
+.table {
+  @include ScreenSizes(tablet) {
+    background-color: $white-background-color;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    padding: 30px;
+    display: block;
+
+    &__header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 10px;
+      gap: 20px;
+
+      margin-bottom: 30px;
+    }
+    &__cells {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__cell {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 10px;
+      // display: flex;
+
+      gap: 10px;
+    }
+  }
+
+  @include ScreenSizes(desktop) {
+    background-color: $white-background-color;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+
+    &__header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 10px;
+      gap: 20px;
+      margin-bottom: 30px;
+
+      font-family: Work Sans;
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 14.08px;
+      text-align: left;
+      color: #545f7d;
+    }
+    &__cells {
+      padding: 10px 0;
+      border-top: 1px solid #213f7d1a;
+      font-family: Work Sans;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16.42px;
+      color: #545f7d;
+    }
+    &__cell {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 10px;
+      gap: 20px;
+
+      border-bottom: 1px solid #213f7d1a;
+
+      &__each {
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+@include ScreenSizes(tablet) {
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+    &__container {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    &__showing {
+      font-family: Work Sans;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.42px;
+      text-align: left;
+
+      color: #545f7d;
+    }
+
+    &__select {
+      background-color: #213f7d1a;
+      font-family: Work Sans;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.42px;
+      text-align: left;
+      color: #213f7d;
+      padding: 3px 5px;
+    }
+    &__outOf {
+      font-family: Work Sans;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.42px;
+      text-align: left;
+      color: #545f7d;
+    }
+    .prevNext {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      &_prev {
+        background: #213f7d1a;
+        border: 0;
+      }
+      &__buttons {
+        display: flex;
+        gap: 5px;
+        cursor: pointer;
+        color: #213f7d1a;
+
+        &__active {
+          color: #545f7d;
+        }
+      }
+      &__buttons:hover {
+      }
+
+      &__next {
+        background: #213f7d1a;
+        border: 0;
+      }
+    }
+  }
+}

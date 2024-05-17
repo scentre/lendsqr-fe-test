@@ -1,0 +1,17 @@
+@mixin widthHeight($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin displayFlex(){
+    display: flex;
+}
+@mixin displayFlexDirection($direction){
+   
+    flex-direction: $direction;
+}
+
+
+@mixin borderColor ($borderColor){
+
+    border-left: 1px solid rgba(84, 95, 125, 0.09);
+}

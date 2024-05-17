@@ -1,0 +1,243 @@
+.login-container {
+  background-color: $white-background-color;
+  @include displayFlex();
+  @include displayFlexDirection(column);
+  padding: 40px;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  .main-logo {
+    img {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .sign-in-picture {
+    max-width: 100%;
+    height: auto;
+  }
+  .sign-in-picture img {
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .inputField-container {
+    @include displayFlex();
+    @include displayFlexDirection(column);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .welcome-paragraph{
+        font-family: "Avenir Next";
+        font-weight: $text-font-weight-normal;
+        font-size: $text-font-size-20;
+        line-height: $text-line-height-27;
+        color: $text-secondary-color;
+        margin-bottom: 60px;   
+    }
+
+    .input-field {
+      @include displayFlex();
+      @include displayFlexDirection(column);
+      gap: 24px;
+      .forgot-password {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16.39px;
+        color: $text-tetiary-color;
+        margin-bottom: 30px;
+      }
+    }
+    .inputField-element {
+        border:  2px solid rgba(84, 95, 125, 0.15);
+
+        height: 50px;
+        width: 80vw;
+      
+        border-radius: 5px;
+      }
+      .inputField-element::placeholder {
+        padding-left: 10px;
+        color: $text-secondary-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19.12px;
+      }
+
+    .welcome-text {
+      color: $text-primary-color;
+      font-weight: $text-font-weight-bold;
+      font-size: $text-font-size-30;
+      line-height: $text-line-height;
+      font-family: "Avenir Next";
+    }
+  }
+
+
+  //tablet screen
+  @include ScreenSizes(tablet) {
+
+    padding: 20px;
+    background-color: $white-background-color;
+    @include displayFlexDirection(row);
+
+
+    background-color: $white-background-color;
+    @include displayFlex();
+    @include displayFlexDirection(column);
+    padding: 40px;
+    min-width: 100vw;
+    min-height: 100vh;
+  
+    .main-logo {
+      img {
+        width: 200px;
+        margin-bottom: 20px;
+      }
+    }
+  
+    .sign-in-picture {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      height: auto;
+    }
+    .sign-in-picture img {
+      object-fit: cover;
+      max-width: 100%;
+    }
+  
+    .inputField-container {
+      @include displayFlex();
+      @include displayFlexDirection(column);
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  
+      .welcome-paragraph{
+          font-family: "Avenir Next";
+          font-weight: $text-font-weight-normal;
+          font-size: $text-font-size-20;
+          line-height: $text-line-height-27;
+          color: $text-secondary-color;
+          margin-bottom: 60px;   
+      }
+  
+      .input-field {
+        @include displayFlex();
+        @include displayFlexDirection(column);
+        gap: 24px;
+        .forgot-password {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16.39px;
+          color: $text-tetiary-color;
+          margin-bottom: 30px;
+        }
+      }
+      .inputField-element {
+          border:  2px solid rgba(84, 95, 125, 0.15);
+  
+          height: 50px;
+          width: 80vw;
+        
+          border-radius: 5px;
+        }
+        .inputField-element::placeholder {
+          padding-left: 10px;
+          color: $text-secondary-color;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19.12px;
+        }
+  
+      .welcome-text {
+        color: $text-primary-color;
+        font-weight: $text-font-weight-bold;
+        font-size: $text-font-size-30;
+        line-height: $text-line-height;
+        font-family: "Avenir Next";
+      }
+    }
+  
+  }
+  //desktop screen
+  @include ScreenSizes(desktop) {
+    padding: 10px;
+    background-color: $white-background-color;
+    @include displayFlexDirection(row);
+
+    .logo-container {
+      flex-basis: 50%;
+      padding: 20px;
+      max-width: 1240px;
+      background-blend-mode: $sidebar-background-color;
+
+      @include displayFlex();
+      @include displayFlexDirection(column);
+      gap: 20px;
+      padding-top: 106px;
+      padding-left: 90px;
+
+      .main-logo {
+        flex-basis: 30%;
+      }
+      .sign-in-picture {
+        // flex-basis: 60%;
+        display: block;
+      }
+    }
+
+    .inputField-container {
+      flex-basis: 50%;
+      @include displayFlex();
+      @include displayFlexDirection(column);
+      justify-content: center;
+      align-items: center;
+      @include borderColor(#545f7d26);
+      .welcome-text {
+        color: $text-primary-color;
+        font-weight: $text-font-weight-bold;
+        font-size: $text-font-size-40;
+        line-height: $text-line-height;
+        font-family: "Avenir Next";
+      }
+      .welcome-paragraph {
+        font-family: "Avenir Next";
+        font-weight: $text-font-weight-normal;
+        font-size: $text-font-size-20;
+        line-height: $text-line-height-27;
+        color: $text-secondary-color;
+        margin-bottom: 60px;
+      }
+      .input-field {
+        @include displayFlex();
+        @include displayFlexDirection(column);
+        gap: 24px;
+        .forgot-password {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16.39px;
+          color: $text-tetiary-color;
+          margin-bottom: 30px;
+        }
+      }
+      .inputField-element {
+        border: 2px solid #545f7d26;
+
+        height: 50px;
+        width: 447px;
+        border-radius: 5px;
+      }
+      .inputField-element::placeholder {
+        padding-left: 10px;
+        color: $text-secondary-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19.12px;
+      }
+    }
+  }
+}

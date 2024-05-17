@@ -1,0 +1,169 @@
+.user-details {
+  padding: 60px;
+
+  &__navigation {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.77px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    color: #545f7d;
+    margin-bottom: 26px;
+    cursor: pointer;
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 46px;
+      border-radius: 4px;
+    }
+
+    &__label {
+      font-family: "Work Sans";
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28.15px;
+      text-align: left;
+      color: #213f7d;
+    }
+    &__buttons {
+      display: flex;
+      gap: 10px;
+    }
+    &__blacklist-button {
+      width: 170px;
+      height: 40px;
+      gap: 0px;
+      border-radius: 8px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      border: 1px solid #e4033b;
+      font-family: "Work Sans";
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16.42px;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: #e4033b;
+    }
+
+    &__activate-button {
+      width: 170px;
+      height: 40px;
+      top: 210px;
+      left: 1210px;
+      gap: 0px;
+      border-radius: 8px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      border: 1px solid #39cdcc;
+      font-family: "Work Sans";
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16.42px;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: #39cdcc;
+    }
+
+    &__container {
+      border-radius: 4px 0px 0px 0px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      background: #ffffff;
+      border-top: 1px solid #213f7d0f;
+      border-left: 1px solid #213f7d0f;
+      border-right: 1px solid #213f7d0f;
+      box-shadow: 3px 5px 20px 0px #0000000a;
+      padding: 30px;
+      &__main {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+      &__bank-details {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        &__amount {
+          font-family: Work Sans;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 25.81px;
+          text-align: left;
+          color: #213f7d;
+        }
+        &__bank-info {
+          font-family: Work Sans;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14.08px;
+          text-align: left;
+          color: #213f7d;
+        }
+      }
+
+      &__tier {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        &__heading {
+          font-family: Work Sans;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16.42px;
+          text-align: left;
+          color: #545f7d;
+        }
+      }
+      &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .user-name {
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 25.81px;
+          text-align: left;
+          color: #213f7d;
+        }
+        .user-id {
+          font-family: Work Sans;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16.42px;
+          text-align: left;
+          color: #213f7d;
+        }
+      }
+      &__navigation {
+        display: flex;
+        justify-content: space-between;
+        background: #ffffff;
+        padding: 5px 20px;
+      }
+      &__logo {
+        background-color: #dbe0ea;
+        color: #213f7d;
+        border-radius: 100%;
+        padding: 15px;
+      }
+
+      &__profile-box {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+    }
+  }
+}

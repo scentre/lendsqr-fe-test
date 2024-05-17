@@ -1,0 +1,135 @@
+.users {
+  padding: 60px;
+
+  &__heading {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.15px;
+    text-align: left;
+
+    color: #213f7d;
+    margin-bottom: 40px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 40px;
+    gap: 20px;
+
+    &__card {
+      height: 160px;
+
+      gap: 0px;
+      border-radius: 4px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      background-color: white;
+      padding: 20px 30px;
+      &__img {
+        margin-bottom: 12px;
+      }
+      &__text {
+        font-family: Work Sans;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.42px;
+        text-align: left;
+        color: #545f7d;
+        margin-bottom: 12px;
+      }
+      &__number {
+        font-family: Work Sans;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28.15px;
+        text-align: left;
+
+        color: #213f7d;
+      }
+    }
+  }
+
+  @include ScreenSizes(tablet) {
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 40px;
+      gap: 20px;
+
+      &__card {
+        height: 160px;
+
+        gap: 0px;
+        border-radius: 4px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        background-color: white;
+        padding: 20px 30px;
+        &__img {
+          margin-bottom: 12px;
+        }
+        &__text {
+          font-family: Work Sans;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16.42px;
+          text-align: left;
+          color: #545f7d;
+          margin-bottom: 12px;
+        }
+        &__number {
+          font-family: Work Sans;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 28.15px;
+          text-align: left;
+
+          color: #213f7d;
+        }
+      }
+    }
+  }
+
+  @include ScreenSizes(desktop) {
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 40px;
+      gap: 20px;
+
+      &__card {
+        height: 160px;
+        top: 228px;
+        left: 343px;
+        gap: 0px;
+        border-radius: 4px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        background-color: white;
+        padding: 20px 30px;
+        &__img {
+          margin-bottom: 12px;
+        }
+        &__text {
+          font-family: Work Sans;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16.42px;
+          text-align: left;
+          color: #545f7d;
+          margin-bottom: 12px;
+        }
+        &__number {
+          font-family: Work Sans;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 28.15px;
+          text-align: left;
+
+          color: #213f7d;
+        }
+      }
+    }
+  }
+}

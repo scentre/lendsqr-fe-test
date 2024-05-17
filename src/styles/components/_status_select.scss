@@ -1,0 +1,83 @@
+.menu {
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    color: $status-text-color;
+    border: 0;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Work Sans";
+    cursor: pointer;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    &__reset {
+      font-family: "Work Sans";
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16.42px;
+      text-align: center;
+      color: #545f7d;
+      width: 98px;
+      height: 40px;
+
+      gap: 0px;
+      border-radius: 8px;
+      border: 1px solid black;
+      opacity: 0px;
+    }
+    &__filter {
+      font-family: "Work Sans";
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16.42px;
+      text-align: center;
+      color: #ffffff;
+      width: 98px;
+      height: 40px;
+      border: 1px solid #39cdcc;
+      gap: 0px;
+      border-radius: 8px;
+      border: 1px solid black;
+      opacity: 0px;
+      background: #39cdcc;
+    }
+  }
+}
+.dropdown-select {
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__heading {
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.42px;
+    text-align: left;
+    color: rgba(84, 95, 125, 1);
+  }
+  &__input {
+    width: 230px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid rgba(33, 63, 125, 0.6);
+  }
+}
+
+.status-select {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #545f7d24;
+  box-shadow: 3px 5px 20px 0px #0000000a;
+}
